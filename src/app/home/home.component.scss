@@ -1,0 +1,207 @@
+.home-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: url('https://img.lb.wbmdstatic.com/vim/live/webmd/consumer_assets/site_images/article_thumbnails/reference_guide/raisins_are_they_good_for_you_ref_guide/1800x1200_raisins_are_they_good_for_you_ref_guide.jpg?resize=750px:*&output-quality=75') center/cover no-repeat;
+}
+.hero-circle {
+  background: #fff;
+  border-radius: 50%;
+  width: 480px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  text-align: center;
+}
+.hero-logo {
+  width: 120px;
+  height: 120px;
+}
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Magilio', serif;
+  margin: 0;
+}
+.nandii {
+  color: #222;
+}
+.exim {
+  color: #a05a2c;
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: #a05a2c;
+  margin: 0.5rem 0 2rem 0;
+  font-family: 'Magilio', serif;
+}
+.hero-btn {
+  background: #a05a2c;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2.2rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  font-family: 'Magilio', serif;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.hero-btn:hover {
+  background: #222;
+}
+
+.carded-section {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  margin: 2.5rem auto;
+  padding: 2.5rem 1.5rem;
+  max-width: 900px;
+}
+
+.about-section h2,
+.products-section h2,
+.quality-section h2,
+.export-section h2,
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: #a05a2c;
+  font-family: 'Magilio', serif;
+}
+
+.why-choose-list,
+.quality-list,
+.export-countries {
+  margin: 1rem 0 1.5rem 1.5rem;
+  padding: 0;
+  list-style: disc inside;
+  color: #333;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.product-card {
+  background: #f5e9da;
+  border-radius: 1rem;
+  box-shadow: 0 1px 8px rgba(160,90,44,0.07);
+  padding: 1.2rem;
+  text-align: center;
+}
+.product-card img {
+  width: 100%;
+  max-width: 160px;
+  border-radius: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+.product-card h3 {
+  color: #a05a2c;
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+.packing-options {
+  margin-top: 1.5rem;
+  background: #f9f6f2;
+  border-radius: 0.7rem;
+  padding: 1rem 1.5rem;
+}
+
+.cta-btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cta-btn {
+  background: #a05a2c;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2.2rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  font-family: 'Magilio', serif;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+.cta-btn.primary:hover,
+.cta-btn.whatsapp:hover {
+  background: #222;
+}
+.cta-btn.whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.contact-section .contact-info {
+  margin-bottom: 1.5rem;
+}
+.contact-icon {
+  width: 1.1em;
+  vertical-align: middle;
+  margin-right: 0.3em;
+}
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.enquiry-form input,
+.enquiry-form textarea {
+  border: 1px solid #e0c9b0;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.enquiry-form button {
+  align-self: flex-end;
+}
+
+@media (max-width: 600px) {
+  .home-hero {
+    min-height: 70vh;
+    padding: 1rem 0;
+  }
+  .hero-circle {
+    width: 90vw;
+    height: 90vw;
+    min-width: 220px;
+    min-height: 220px;
+    max-width: 98vw;
+    max-height: 98vw;
+    padding: 1rem;
+  }
+  .hero-logo {
+    width: 100px;
+    height: 100px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .hero-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+  .carded-section {
+    padding: 1.2rem 0.5rem;
+  }
+  .products-list {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
