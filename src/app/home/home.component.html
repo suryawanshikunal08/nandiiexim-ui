@@ -1,5 +1,13 @@
 <!-- Hero Section -->
-<section class="home-hero">
+<section
+  class="home-hero"
+  [ngStyle]="{
+    'background-image': 'url(assets/heroImage.jpg)',
+    'background-position': 'center',
+    'background-size': 'cover',
+    'background-repeat': 'no-repeat'
+  }"
+>
   <div class="hero-circle">
     <img src="assets/cow.svg" alt="Logo" class="hero-logo" />
     <h1><span class="nandii">NANDII</span><span class="exim">EXIM</span></h1>
@@ -7,6 +15,7 @@
     <button class="hero-btn">Explore</button>
   </div>
 </section>
+
 
 <!-- Main Headline and Welcome Message -->
 <section class="headline-section carded-section">
